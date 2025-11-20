@@ -1,0 +1,91 @@
+{
+  "type": "java",
+  "labName": "Strings",
+  "testFiles": [
+    {
+      "path": "src/test/java/SimpleStringMethodsTest.java",
+      "testCases": [
+        {
+          "methodName": "lengthTest",
+          "label": "returns length of a string",
+          "description": "Verifies that getStringLength correctly returns the number of characters in a given string."
+        },
+        {
+          "methodName": "charAtTest1",
+          "label": "gets character at valid index (middle)",
+          "description": "Checks that getCharacterAtIndex returns the correct character when given a string and a valid index in the middle of the string."
+        },
+        {
+          "methodName": "charAtTest2",
+          "label": "gets character at valid index (other case)",
+          "description": "Checks that getCharacterAtIndex returns the correct character for a different string and index combination."
+        },
+        {
+          "methodName": "indexOfTest1",
+          "label": "finds index of existing character",
+          "description": "Ensures that getIndexGivenCharacter returns the index of a character that appears in the string (e.g., 'b' in \"zebra\" returns 2)."
+        },
+        {
+          "methodName": "indexOfTest2",
+          "label": "returns -1 when character not found",
+          "description": "Ensures that getIndexGivenCharacter returns -1 when the specified character does not appear in the string (e.g., 'q' in \"banana\")."
+        }
+      ]
+    },
+    {
+      "path": "src/test/java/OtherStringMethodsTest.java",
+      "testCases": [
+        {
+          "methodName": "partOfStringTest1",
+          "label": "extracts substring from string (case 1)",
+          "description": "Verifies that partOfString returns the correct substring for a given start and end index."
+        },
+        {
+          "methodName": "partOfStringTest2",
+          "label": "extracts substring from string (case 2)",
+          "description": "Checks that partOfString correctly extracts a different substring range from the input string."
+        },
+        {
+          "methodName": "compareToTest1",
+          "label": "compares strings lexicographically (less than)",
+          "description": "Ensures that compareLexigraphically returns a negative value or indicator when the first string comes before the second lexicographically."
+        },
+        {
+          "methodName": "compareToTest2",
+          "label": "compares strings lexicographically (greater than)",
+          "description": "Ensures that compareLexigraphically returns a positive value or indicator when the first string comes after the second lexicographically."
+        },
+        {
+          "methodName": "compareToTest3",
+          "label": "compares strings lexicographically (equal)",
+          "description": "Ensures that compareLexigraphically indicates equality when two strings are lexicographically equal."
+        },
+        {
+          "methodName": "splitStringTest1",
+          "label": "splits string around delimiter (spaces)",
+          "description": "Verifies that splitStringIntoMultipleStrings splits the input string around spaces into the expected array of substrings."
+        },
+        {
+          "methodName": "splitStringTest2",
+          "label": "splits string around regex delimiter (period)",
+          "description": "Verifies that splitStringIntoMultipleStrings splits \"src.main.java\" around periods into {\"src\", \"main\", \"java\"}, using an escaped regex delimiter."
+        }
+      ]
+    },
+    {
+      "path": "src/test/java/CombiningStringsTest.java",
+      "testCases": [
+        {
+          "methodName": "combineTest1",
+          "label": "concatenates two alphabetic strings",
+          "description": "Checks that combine concatenates \"abc\" and \"xyz\" into \"abcxyz\"."
+        },
+        {
+          "methodName": "combineTest2",
+          "label": "concatenates two numeric strings",
+          "description": "Checks that combine concatenates \"123\" and \"456\" into \"123456\"."
+        }
+      ]
+    }
+  ]
+}
